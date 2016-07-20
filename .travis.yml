@@ -24,4 +24,5 @@ install:
     - if [[ "$TRAVIS_OS_NAME" != "osx" ]]; then      python setup.py --quiet install; fi
 
 script:
+    - uname -a
     - cram --indent=4 test.cram
