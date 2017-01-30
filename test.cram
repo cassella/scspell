@@ -177,3 +177,7 @@ Test interactive use, using --test-input instead of --report-only
     NATURAL:
     embiggen
     
+Unit tests
+
+    $ PYTHONPATH=$TESTDIR python -m scspell._corpustest  2>&1 | tail -1
+    OK
